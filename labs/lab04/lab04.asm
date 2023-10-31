@@ -1,14 +1,14 @@
 SECTION .data 
 name: DB 'Татьяна Буллер',10 
 
-nameLen: EQU $-name  
+nameLen: EQU $-name 
 SECTION .text 
 GLOBAL _start
 _start: 
 mov eax,4 
 mov ebx,1 
 mov ecx,name 
-mov edx,nameLen  
+mov edx,nameLen 
 int 80h 
 mov eax,1 
 mov ebx,0 
